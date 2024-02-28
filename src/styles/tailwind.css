@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .customIcon {
+        @apply w-28 -mt-4  rounded-2xl text-color-primary;
+    }
+
+    .customIconNotAv {
+        @apply w-28 -mt-4 rounded-2xl text-color-info-dark p-2;
+    }
+
+    .customInputField {
+        @apply ring-1 ring-color-primary focus:outline-none focus:ring-2   rounded-md p-1;
+    }
+
+    .customButton {
+        @apply w-32 bg-color-primary hover:bg-color-primary-variant text-color-white hover:text-color-white font-bold py-2 px-4 rounded-full transition-all;
+    }
+
+    .customButtonNoWdt {
+        @apply w-fit bg-color-primary hover:bg-color-primary-variant text-color-white hover:text-color-white font-bold py-2 px-4 rounded-full transition-all;
+    }
+
+    .customButtonTransparent {
+        @apply w-32 bg-transparent border-2 border-color-primary text-color-primary hover:bg-color-primary hover:text-color-white font-bold py-2 px-4 rounded-full transition-all;
+    }
+    .customButtonTransparentNoWdt {
+        @apply w-fit bg-transparent border-2 border-color-primary text-color-primary hover:bg-color-primary hover:text-color-white font-bold py-2 px-4 rounded-full transition-all;
+    }
+
+    .customButtonYellow {
+        @apply flex hover:bg-color-warning text-color-warning border hover:text-color-white font-bold py-2 px-4 rounded-full transition-all
+    }
+
+    .customButtonYellowBg {
+        @apply flex bg-color-warning hover:bg-[#e9eaf5] hover:text-color-primary hover:border text-color-white font-bold py-2 px-4 rounded-full transition-all
+    }
+
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
